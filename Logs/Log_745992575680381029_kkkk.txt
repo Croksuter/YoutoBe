@@ -1,0 +1,39 @@
+<2020-09-13 00:48:12.304709> [Join] The bot has connected to 일반
+<2020-09-13 00:48:14.989333> [Queue] Have no queue
+<2020-09-13 00:48:14.989463> [Queue] First message
+<2020-09-13 00:48:16.301616> [Queue] Have no queue
+<2020-09-13 00:48:16.301740> [Queue] After message
+<2020-09-13 00:48:18.663005> [Leave] The bot has disconnected to 일반 in kkkk
+<2020-09-13 00:48:25.394107> [Queue] Have no queue
+<2020-09-13 00:48:25.394171> [Queue] First message
+<2020-09-13 00:48:28.337345> [Queue] Have no queue
+<2020-09-13 00:48:28.337468> [Queue] After message
+<2020-09-13 00:48:35.159731> [Leave] The bot is not in any voice channel in kkkk
+<2020-09-13 00:50:17.128310> [Join] The bot has connected to 테스트 1
+<2020-09-13 00:50:18.726821> [Leave] The bot has disconnected to 테스트 1 in kkkk
+<2020-09-13 00:50:21.124009> [Join] The bot has connected to 테스트 1
+<2020-09-13 00:50:22.382367> [Leave] The bot has disconnected to 테스트 1 in kkkk
+<2020-09-13 00:50:28.329785> [Join] The bot has connected to 테스트 1
+<2020-09-13 00:50:31.547820> [Join] The bot has moved to 일반
+<2020-09-13 00:50:33.529189> [Leave] The bot has disconnected to 일반 in kkkk
+<2020-09-13 00:50:53.619855> [Join] The bot has connected to 일반
+<2020-09-13 00:50:56.461075> [Leave] The bot has disconnected to 일반 in kkkk
+<2020-09-13 00:51:01.199943> [Join] The bot has connected to 테스트 1
+<2020-09-13 00:51:02.738952> [Leave] The bot has disconnected to 테스트 1 in kkkk
+<2020-09-13 00:52:19.454150> [Join] The bot has connected to 테스트 1
+<2020-09-13 00:52:22.031963> [Queue] Have no queue
+<2020-09-13 00:52:22.032074> [Queue] First message
+<2020-09-13 00:52:23.540968> [Queue] Have no queue
+<2020-09-13 00:52:23.541060> [Queue] After message
+<2020-09-13 00:52:29.911784> [Join] The bot has moved to 일반
+<2020-09-13 00:52:31.836418> [Queue] Have no queue
+<2020-09-13 00:52:31.836517> [Queue] After message
+<2020-09-13 00:52:34.053543> [Queue] Have no queue
+<2020-09-13 00:52:34.053666> [Queue] After message
+<2020-09-13 00:52:36.704914> [Leave] The bot has disconnected to 일반 in kkkk
+<2020-09-13 00:52:41.360069> [Join] The bot has connected to 테스트 1
+<2020-09-13 00:52:42.797579> [Queue] Have no queue
+<2020-09-13 00:52:42.797724> [Queue] First message
+<2020-09-13 00:52:46.800810> [Queue] Have no queue
+<2020-09-13 00:52:46.800885> [Queue] After message
+<2020-09-13 00:52:55.161597> [Leave] The bot has disconnected to 테스트 1 in kkkk
