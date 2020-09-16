@@ -1,13 +1,16 @@
 import asyncio
+import requests
 import datetime
 import discord
 import os
 import sqlite3
+import requests
 from discord.utils import get
 from discord.ext import commands
 from discord.ext.commands import Bot
 
 BOT_TOKEN = ""
+key = ""
 BOT_GAME = discord.Game('착취 당')
 BOT_PREFIX = "//"
 BOT_STATUS = discord.Status.online
@@ -35,23 +38,39 @@ SERVER_SQL.execute('create table if not exists Servers('
 SERVER_DB.commit()
 
 queue_message_set = {}
+search_message_set = {}
+search_url_set = {}
 
-def Get_server_values(ctx):
-    server_id = ctx.guild.id
-    SERVER_SQL.execute('SELECT * FROM Servers WHERE Server_ID = ?',
-                       (server_id,))
-    for i in SERVER_SQL.fetchall():
-        if server_id == i[1]:
-            return i
+def Server_Update(server_id, value_set):
+    global SERVER_SQL, SERVER_DB
+    for name, value in value_set.items():
+        SERVER_SQL.execute(f'UPDATE Servers SET {name} = ? WHERE Server_ID = ?',
+                            (value, server_id))
+    SERVER_DB.commit()
 
-
+def Queue_Update(server_id, server_name, command, video_info_set):
+    QUEUE_DB = sqlite3.connect(os.path.join(
+        ORIGINAL_DIR, f"Servers/Queue_{server_id}_{server_name}.db"))
+    QUEUE_SQL = QUEUE_DB.cursor()
+    if command == "APPEND":
+        QUEUE_SQL.execute(f'SELECT Song_Title FROM Queues')
+        QUEUE_SQL.execute('insert into Queues('
+                          'Song_Title" '
+                          'Song_Channel '
+                          'Song_Link '
+                          'Song_Lyric_Value '
+                          'Request_User_ID '
+                          'Request_User_Name) '
+                          'values(?,?,?,?,?,?)'
+                          ')', )
+        QUEUE_DB.commit()
 
 @bot.event
 async def on_ready():
     print('Bot is on ready')
 
 
-@bot.command(pass_context=True)
+@bot.command()
 async def 입장(ctx):
     method = "Join"
     log_message = ""
@@ -139,7 +158,7 @@ async def 입장(ctx):
         f.write(log_message)
 
 
-@bot.command(pass_context=True)
+@bot.command()
 async def 퇴장(ctx):
     method = "Leave"
     log_message = ""
@@ -153,11 +172,13 @@ async def 퇴장(ctx):
     if str(server_id) in queue_message_set.keys():
         await queue_message_set[f'{server_id}'].delete()
         del queue_message_set[f'{server_id}']
+    if str(server_id) in search_message_set.keys():
+        await search_message_set[f'{server_id}'].delete()
+        del search_message_set[f'{server_id}']
     if voice and voice.is_connected():
         await voice.disconnect()
-        SERVER_SQL.execute('UPDATE Servers SET Voice_Status = ? WHERE Server_ID = ?',
-                           (0, server_id))
-        SERVER_DB.commit()
+        Server_Update(server_id, {"Voice_Status" : 0,
+                                  "Playing_Status" : "Stop"})
         log_message += f'<{datetime.datetime.now()}> [{method}] The bot has disconnected to {channel_name} in {server_name}' + "\n"
         await ctx.send(f'The bot has disconnected to {channel_name}')
     else:
@@ -205,14 +226,73 @@ async def 큐(ctx, *args):
         embed.add_field(name="번호", value=str_num, inline=True)
         embed.add_field(name="제목", value=str_songs, inline=True)
 
-    if str(server_id) not in queue_message_set.keys():
+    if not str(server_id) in queue_message_set.keys():
         log_message += f'<{datetime.datetime.now()}> [{method}] First message' + "\n"
     else:
         log_message += f'<{datetime.datetime.now()}> [{method}] After message' + "\n"
-        await queue_message_set[f"{server_id}"].delete()
+        queue_message_set[f"{server_id}"].delete()
+
     queue_message_set[f"{server_id}"] = await ctx.send(embed=embed)
     with open(os.path.join(ORIGINAL_DIR, f"Logs/Log_{server_id}_{server_name}.txt"), 'a') as f:
         f.write(log_message)
+
+@bot.command()
+async def 검색(ctx, *args):
+    global key
+    server_id = ctx.guild.id
+    server_name = str(ctx.guild)
+    method = "Search"
+    log_message = ""
+    if "".join(args) != "":
+        url = "https://www.googleapis.com/youtube/v3/search"
+
+        params = {"q": " ".join(args),
+                  "part": "snippet",
+                  "key": key,
+                  "maxResult": 5}
+        response = requests.get(url, params=params)
+        data = response.json()
+        queue_data = []
+        message = ""
+        search_url_set[str(server_id)] = (0,0,0,0,0)
+        for i in range(len(data['items'])):
+            search_url_set[str(server_id)][i] = data['items'][i]['id']['videoId']
+            message += str(i+1) + "번 : `" + data['items'][i]['snippet']['title'] + "`" + "\n"
+        if str(server_id) in search_message_set.keys():
+            await search_message_set[str(server_id)].delete()
+            log_message += f'<{datetime.datetime.now()}> [{method}] After message' + "\n"
+        else:
+            log_message += f'<{datetime.datetime.now()}> [{method}] First message' + "\n"
+        search_message_set[str(server_id)] = await ctx.send(message)
+        log_message += f'<{datetime.datetime.now()}> [{method}] Searched [{" ".join(args)}]' + "\n"
+    else:
+        log_message += f'<{datetime.datetime.now()}> [{method}] There is no searching words' + "\n"
+        if str(server_id) in search_message_set.keys():
+            await search_message_set[str(server_id)].delete()
+            log_message += f'<{datetime.datetime.now()}> [{method}] After message' + "\n"
+        else:
+            log_message += f'<{datetime.datetime.now()}> [{method}] After message' + "\n"
+        search_message_set[str(server_id)] = await ctx.send("`There is no word to search`")
+    with open(os.path.join(ORIGINAL_DIR, f"Logs/Log_{server_id}_{server_name}.txt"), 'a') as f:
+        f.write(log_message)
+
+@bot.command()
+async def 재생(ctx, *args):
+    server_id = ctx.guild.id
+    server_name = str(ctx.guild)
+    log_message = ""
+    value = "".join(args)
+    if value == "":
+        pass
+    elif search_message_set[str(server_id)] != None:
+        if value.isdigit() and 0 < int(value) < 6:
+            id = search_url_set[str(server_id)][int(value)]
+            response = requests.get("https://www.googleapis.com/youtube/v3/videos",
+                                    params={"part": "contentDetails",
+                                            "key": key,
+                                            "id": id})
+
+            Queue_Update(server_id, server_name, "APPEND", ())
 
 
 @bot.command()
@@ -222,6 +302,28 @@ async def 테스트(ctx):
     await 큐(ctx)
     await 퇴장(ctx)
 
+
+@bot.event
+async def on_error(ctx, error):
+    guild = ctx.guild
+    server_id = guild.id
+    server_name = str(guild)
+    log_message = ""
+    method = "on_error"
+    log_message += f'<{datetime.datetime.now()}> [{method}] {error}' + "\n"
+    with open(os.path.join(ORIGINAL_DIR, f"Logs/Log_{server_id}_{server_name}.txt"), 'a') as f:
+        f.write(log_message)
+
+@bot.event
+async def on_command_error(ctx, error):
+    guild = ctx.guild
+    server_id = guild.id
+    server_name = str(guild)
+    log_message = ""
+    method = "on_command_error"
+    log_message += f'<{datetime.datetime.now()}> [{method}] {error}' + "\n"
+    with open(os.path.join(ORIGINAL_DIR, f"Logs/Log_{server_id}_{server_name}.txt"), 'a') as f:
+        f.write(log_message)
 
 
 bot.run(BOT_TOKEN)

@@ -1,0 +1,50 @@
+<2020-09-16 18:11:50.743896> [Join] The bot has connected to vivivi
+<2020-09-16 18:12:48.189437> [Leave] The bot has disconnected to vivivi in 라응애
+<2020-09-16 18:12:50.295825> [Join] The bot has connected to vivivi
+<2020-09-16 18:12:50.983944> [Queue] Have queue
+<2020-09-16 18:12:50.984017> [Queue] First message
+<2020-09-16 18:12:51.250770> [Queue] Have queue
+<2020-09-16 18:12:51.250828> [Queue] After message
+<2020-09-16 18:12:52.094638> [Leave] The bot has disconnected to vivivi in 라응애
+<2020-09-16 18:14:14.598228> [Join] The bot has connected to vivivi
+<2020-09-16 18:14:23.525553> [Queue] Have queue
+<2020-09-16 18:14:23.525757> [Queue] First message
+<2020-09-16 18:14:29.339046> [Leave] The bot has disconnected to vivivi in 라응애
+<2020-09-16 18:18:22.192756> [Join] The bot has connected to vivivi
+<2020-09-16 18:18:27.411196> [Leave] The bot has disconnected to vivivi in 라응애
+<2020-09-16 18:18:34.806616> [Queue] Have queue
+<2020-09-16 18:18:34.806720> [Queue] First message
+<2020-09-16 18:39:08.619899> [Queue] Have queue
+<2020-09-16 18:39:08.619970> [Queue] First message
+<2020-09-16 18:39:17.190478> [Queue] Have queue
+<2020-09-16 18:39:17.190603> [Queue] After message
+<2020-09-16 18:41:54.382276> [on_command_error] Command raised an exception: OperationalError: database is locked
+<2020-09-16 18:43:56.005604> [Join] The bot has connected to vivivi
+<2020-09-16 18:44:20.910890> [Join] The bot has connected to vivivi
+<2020-09-16 18:44:26.386820> [on_command_error] Command "뷁" is not found
+<2020-09-16 18:44:41.283893> [Join] This bot is already in vivivi
+<2020-09-16 18:44:41.584101> [Queue] Have queue
+<2020-09-16 18:44:41.584156> [Queue] First message
+<2020-09-16 18:44:41.877456> [Queue] Have queue
+<2020-09-16 18:44:41.877502> [Queue] After message
+<2020-09-16 18:44:42.644139> [on_command_error] Command raised an exception: ValueError: too many values to unpack (expected 2)
+<2020-09-16 18:45:58.252356> [Join] The bot has connected to vivivi
+<2020-09-16 18:46:40.258136> [Join] The bot has connected to vivivi
+<2020-09-16 18:47:04.506523> [Join] The bot has connected to vivivi
+<2020-09-16 18:47:06.334744> [Leave] The bot has disconnected to vivivi in 라응애
+<2020-09-16 21:58:28.693549> [Join] The bot has connected to 일반
+<2020-09-16 21:59:10.697350> [Join] The bot has connected to 일반
+<2020-09-16 22:15:36.140123> [on_command_error] Command raised an exception: UnboundLocalError: local variable 'log_message' referenced before assignment
+<2020-09-16 22:16:34.484447> [on_command_error] Command raised an exception: NameError: name 'server_name' is not defined
+<2020-09-16 22:17:06.299265> [Search] First message
+<2020-09-16 22:17:06.576399> [Search] Searched []
+<2020-09-16 22:17:37.853258> [Search] First message
+<2020-09-16 22:17:38.156352> [Search] Searched []
+<2020-09-16 22:17:47.908882> [Search] After message
+<2020-09-16 22:17:48.169469> [Search] Searched [망상감상]
+<2020-09-16 22:18:29.836536> [Search] There is no searching words
+<2020-09-16 22:18:29.836561> [Search] After message
+<2020-09-16 22:18:40.789955> [Search] There is no searching words
+<2020-09-16 22:18:41.040457> [Search] After message
+<2020-09-16 22:18:47.147033> [Search] After message
+<2020-09-16 22:18:47.419878> [Search] Searched [망상감상]
