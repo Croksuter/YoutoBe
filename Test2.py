@@ -1,17 +1,9 @@
-import asyncio
-import time
-
-async def wait():
-    for i in range(5):
-        await loop.run_in_executor(None, waiting)
-    print("Done!")
-
-def waiting():
-    time.sleep(1)
-    print(1)
-
-async def main():
-    await wait(), wait()
-
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+from pendulum.parsing import parse_iso8601
+import datetime
+data = parse_iso8601('PT04M19S')
+d,h,m,s = data.days, data.hours, data.minutes, data.seconds
+if d != 0:
+    timestamp = "{:02}:".format(d) + datetime.datetime(2000,10,1,hour=h, minute=m, second=s).strftime('%H:%M:%S')
+else:
+    timestamp = datetime.datetime(2000, 10, 1, hour=h, minute=m, second=s).strftime('%H:%M:%S')
+print(str(timestamp))

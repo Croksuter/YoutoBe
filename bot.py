@@ -5,12 +5,13 @@ import discord
 import os
 import sqlite3
 import requests
+from pendulum.parsing import parse_iso8601
 from discord.utils import get
 from discord.ext import commands
 from discord.ext.commands import Bot
 
-BOT_TOKEN = ""
-key = ""
+BOT_TOKEN = "NzQ2MDA0Mjg3NTIzNjUxNzQ0.Xz6Aog.DM_WE2Mi550-f50fQUaFNV279wg"
+key = "AIzaSyBvBYDJhGf6SNm9kADqw6U9Lsl-kGE7Wkk"
 BOT_GAME = discord.Game('착취 당')
 BOT_PREFIX = "//"
 BOT_STATUS = discord.Status.online
@@ -39,7 +40,7 @@ SERVER_DB.commit()
 
 queue_message_set = {}
 search_message_set = {}
-search_url_set = {}
+search_set = {}
 
 def Server_Update(server_id, value_set):
     global SERVER_SQL, SERVER_DB
@@ -53,17 +54,27 @@ def Queue_Update(server_id, server_name, command, video_info_set):
         ORIGINAL_DIR, f"Servers/Queue_{server_id}_{server_name}.db"))
     QUEUE_SQL = QUEUE_DB.cursor()
     if command == "APPEND":
-        QUEUE_SQL.execute(f'SELECT Song_Title FROM Queues')
-        QUEUE_SQL.execute('insert into Queues('
-                          'Song_Title" '
-                          'Song_Channel '
-                          'Song_Link '
-                          'Song_Lyric_Value '
-                          'Request_User_ID '
+        QUEUE_SQL.execute(f'insert into Queues('
+                          'Song_Title ,'
+                          'Song_Channel, '
+                          'Song_Link, '
+                          'Song_Lyric_Value, '
+                          'Duration, '
+                          'Request_User_ID, '
                           'Request_User_Name) '
-                          'values(?,?,?,?,?,?)'
-                          ')', )
+                          'values(?,?,?,?,?,?,?)'
+                          , video_info_set)
         QUEUE_DB.commit()
+
+def Parsing(content):
+    data = parse_iso8601(content)
+    d, h, m, s = data.days, data.hours, data.minutes, data.seconds
+    if d != 0:
+        timestamp = "{:02}:".format(d*24+h) + datetime.datetime(2000, 10, 1, hour=h, minute=m, second=s).strftime('%M:%S')
+    else:
+        timestamp = datetime.datetime(2000, 10, 1, hour=h, minute=m, second=s).strftime('%M:%S')
+    return timestamp
+
 
 @bot.event
 async def on_ready():
@@ -145,11 +156,12 @@ async def 입장(ctx):
     QUEUE_SQL = QUEUE_DB.cursor()
     QUEUE_SQL.execute('create table if not exists Queues('
                       '"Num" integer not null primary key, '
-                      '"Song_Title" integer, '
+                      '"Song_Title" text, '
                       '"Song_Channel" text, '
                       '"Song_Link" text, '
-                      '"Song_Lyric_Value" integer, '
-                      '"Request_User_ID" integer, '
+                      '"Song_Lyric_Value" text, '
+                      '"Duration" text, '
+                      '"Request_User_ID" text, '
                       '"Request_User_Name" text'
                       ')')
     QUEUE_DB.commit()
@@ -252,12 +264,22 @@ async def 검색(ctx, *args):
                   "maxResult": 5}
         response = requests.get(url, params=params)
         data = response.json()
-        queue_data = []
+        response = requests.get("https://www.googleapis.com/youtube/v3/videos",
+                                params={"part": "contentDetails",
+                                        "key": key,
+                                        "id": ",".join((i['id']['videoId'] for i in data['items']))})
+        #form : id, title, channel
+        temp_video_info = [(i['id']['videoId'], i['snippet']['title'], i['snippet']['channelTitle']) for i in data['items']]
+        #form : duration, caption
+        temp_contentdetail = [(Parsing(i['contentDetails']['duration']), i['contentDetails']['caption']) for i in response.json()['items']]
+        search_set[str(server_id)] = []
+        for i in range(len(temp_video_info)):
+            search_set[str(server_id)].append(temp_video_info[i] +temp_contentdetail[i])
+        print(search_set[str(server_id)])
+
         message = ""
-        search_url_set[str(server_id)] = (0,0,0,0,0)
         for i in range(len(data['items'])):
-            search_url_set[str(server_id)][i] = data['items'][i]['id']['videoId']
-            message += str(i+1) + "번 : `" + data['items'][i]['snippet']['title'] + "`" + "\n"
+            message += "**" +str(i+1) + "번 : ( " + search_set[str(server_id)][i][3] + " )** `" + search_set[str(server_id)][i][1] + "` \n"
         if str(server_id) in search_message_set.keys():
             await search_message_set[str(server_id)].delete()
             log_message += f'<{datetime.datetime.now()}> [{method}] After message' + "\n"
@@ -265,6 +287,7 @@ async def 검색(ctx, *args):
             log_message += f'<{datetime.datetime.now()}> [{method}] First message' + "\n"
         search_message_set[str(server_id)] = await ctx.send(message)
         log_message += f'<{datetime.datetime.now()}> [{method}] Searched [{" ".join(args)}]' + "\n"
+
     else:
         log_message += f'<{datetime.datetime.now()}> [{method}] There is no searching words' + "\n"
         if str(server_id) in search_message_set.keys():
@@ -286,13 +309,15 @@ async def 재생(ctx, *args):
         pass
     elif search_message_set[str(server_id)] != None:
         if value.isdigit() and 0 < int(value) < 6:
-            id = search_url_set[str(server_id)][int(value)]
-            response = requests.get("https://www.googleapis.com/youtube/v3/videos",
-                                    params={"part": "contentDetails",
-                                            "key": key,
-                                            "id": id})
+            data = search_set[str(server_id)][int(value)-1]
+            Queue_Update(server_id, server_name, "APPEND", (data[1],
+                                                            data[2],
+                                                            "https://www.youtube.com/watch?v="+data[0],
+                                                            data[4],
+                                                            data[3],
+                                                            str(ctx.message.author),
+                                                            ctx.message.author.name))
 
-            Queue_Update(server_id, server_name, "APPEND", ())
 
 
 @bot.command()
@@ -302,7 +327,7 @@ async def 테스트(ctx):
     await 큐(ctx)
     await 퇴장(ctx)
 
-
+"""
 @bot.event
 async def on_error(ctx, error):
     guild = ctx.guild
@@ -323,7 +348,7 @@ async def on_command_error(ctx, error):
     method = "on_command_error"
     log_message += f'<{datetime.datetime.now()}> [{method}] {error}' + "\n"
     with open(os.path.join(ORIGINAL_DIR, f"Logs/Log_{server_id}_{server_name}.txt"), 'a') as f:
-        f.write(log_message)
+        f.write(log_message)"""
 
 
 bot.run(BOT_TOKEN)
