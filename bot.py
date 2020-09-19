@@ -16,8 +16,8 @@ from discord.ext.commands import Bot
 from discord import FFmpegPCMAudio
 from youtube_dl import YoutubeDL
 
-BOT_TOKEN = "NzQ2MDA0Mjg3NTIzNjUxNzQ0.Xz6Aog.lxDlD-XjxIS9MzyOiamZRw4XpbQ"
-key = "AIzaSyBvBYDJhGf6SNm9kADqw6U9Lsl-kGE7Wkk"
+BOT_TOKEN = ""
+key = ""
 BOT_GAME = discord.Game('착취 당')
 BOT_PREFIX = "//"
 BOT_STATUS = discord.Status.online
