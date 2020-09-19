@@ -3,14 +3,20 @@ import requests
 import datetime
 import discord
 import os
+import json
 import sqlite3
 import requests
+import pytube
+from youtubesearchpython import SearchVideos
+import youtube_dl
 from pendulum.parsing import parse_iso8601
 from discord.utils import get
 from discord.ext import commands
 from discord.ext.commands import Bot
+from discord import FFmpegPCMAudio
+from youtube_dl import YoutubeDL
 
-BOT_TOKEN = "NzQ2MDA0Mjg3NTIzNjUxNzQ0.Xz6Aog.DM_WE2Mi550-f50fQUaFNV279wg"
+BOT_TOKEN = "NzQ2MDA0Mjg3NTIzNjUxNzQ0.Xz6Aog.lxDlD-XjxIS9MzyOiamZRw4XpbQ"
 key = "AIzaSyBvBYDJhGf6SNm9kADqw6U9Lsl-kGE7Wkk"
 BOT_GAME = discord.Game('착취 당')
 BOT_PREFIX = "//"
@@ -41,6 +47,8 @@ SERVER_DB.commit()
 queue_message_set = {}
 search_message_set = {}
 search_set = {}
+vc_set = {}
+player_set = {}
 
 def Server_Update(server_id, value_set):
     global SERVER_SQL, SERVER_DB
@@ -67,12 +75,13 @@ def Queue_Update(server_id, server_name, command, video_info_set):
         QUEUE_DB.commit()
 
 def Parsing(content):
-    data = parse_iso8601(content)
-    d, h, m, s = data.days, data.hours, data.minutes, data.seconds
-    if d != 0:
-        timestamp = "{:02}:".format(d*24+h) + datetime.datetime(2000, 10, 1, hour=h, minute=m, second=s).strftime('%M:%S')
+    data = list(map(int,content.split(':')))
+    if len(data) == 3:
+        timestamp = "{:02}:{:02}:{:02}".format(data[0], data[1], data[2])
+    elif len(data) == 2:
+        timestamp = "{:02}:{:02}".format(data[0], data[1])
     else:
-        timestamp = datetime.datetime(2000, 10, 1, hour=h, minute=m, second=s).strftime('%M:%S')
+        timestamp = "{:02}:{:02}".format(0, data[0])
     return timestamp
 
 
@@ -99,7 +108,7 @@ async def 입장(ctx):
     audio_effect = 'Default'
     queue_page = 1
     playing_status = 'Stop'
-    voice = get(bot.voice_clients, guild=guild)
+    vc_set[str(server_id)] = get(bot.voice_clients, guild=guild)
 
     SERVER_SQL.execute('SELECT * FROM Servers')
     for i in SERVER_SQL.fetchall():
@@ -110,16 +119,16 @@ async def 입장(ctx):
         language_code = 'en-US'
 
     SERVER_SQL.execute(f'SELECT Channel_ID FROM Servers WHERE Server_ID = {server_id}')
-    if voice and voice.is_connected():
+    if vc_set[str(server_id)] and vc_set[str(server_id)].is_connected():
         if SERVER_SQL.fetchone()[0] == channel_id:
             log_message += f'<{datetime.datetime.now()}> [{method}] This bot is already in {channel_name}' + "\n"
             await ctx.send(f'This bot is already in {channel_name}')
         else:
-            await voice.move_to(channel)
+            await vc_set[str(server_id)].move_to(channel)
             log_message += f'<{datetime.datetime.now()}> [{method}] The bot has moved to {channel_name}' + "\n"
             await ctx.send(f'The bot has moved to {channel_name}')
     else:
-        voice = await channel.connect()
+        vc_set[str(server_id)] = await channel.connect()
         log_message += f'<{datetime.datetime.now()}> [{method}] The bot has connected to {channel_name}' + "\n"
         await ctx.send(f'The bot has connected to {channel_name}')
 
@@ -179,7 +188,7 @@ async def 퇴장(ctx):
     server_name = str(guild)
     channel = ctx.message.author.voice.channel
     channel_name = str(channel)
-    voice = get(bot.voice_clients, guild=guild)
+    vc_set[str(server_id)] = get(bot.voice_clients, guild=guild)
 
     if str(server_id) in queue_message_set.keys():
         await queue_message_set[f'{server_id}'].delete()
@@ -187,8 +196,9 @@ async def 퇴장(ctx):
     if str(server_id) in search_message_set.keys():
         await search_message_set[f'{server_id}'].delete()
         del search_message_set[f'{server_id}']
-    if voice and voice.is_connected():
-        await voice.disconnect()
+    if vc_set[str(server_id)] and vc_set[str(server_id)].is_connected():
+        await vc_set[str(server_id)].disconnect()
+        del vc_set[str(server_id)]
         Server_Update(server_id, {"Voice_Status" : 0,
                                   "Playing_Status" : "Stop"})
         log_message += f'<{datetime.datetime.now()}> [{method}] The bot has disconnected to {channel_name} in {server_name}' + "\n"
@@ -256,29 +266,16 @@ async def 검색(ctx, *args):
     method = "Search"
     log_message = ""
     if "".join(args) != "":
-        url = "https://www.googleapis.com/youtube/v3/search"
 
-        params = {"q": " ".join(args),
-                  "part": "snippet",
-                  "key": key,
-                  "maxResult": 5}
-        response = requests.get(url, params=params)
-        data = response.json()
-        response = requests.get("https://www.googleapis.com/youtube/v3/videos",
-                                params={"part": "contentDetails",
-                                        "key": key,
-                                        "id": ",".join((i['id']['videoId'] for i in data['items']))})
+        search = SearchVideos(" ".join(args), offset=1, mode="json", max_results=5)
+        data = json.loads(search.result())['search_result']
         #form : id, title, channel
-        temp_video_info = [(i['id']['videoId'], i['snippet']['title'], i['snippet']['channelTitle']) for i in data['items']]
-        #form : duration, caption
-        temp_contentdetail = [(Parsing(i['contentDetails']['duration']), i['contentDetails']['caption']) for i in response.json()['items']]
-        search_set[str(server_id)] = []
-        for i in range(len(temp_video_info)):
-            search_set[str(server_id)].append(temp_video_info[i] +temp_contentdetail[i])
+        temp_video_info = [(i['link'], i['title'], i['channel'], Parsing(i['duration'])) for i in data]
+        search_set[str(server_id)] = tuple(temp_video_info)
         print(search_set[str(server_id)])
 
         message = ""
-        for i in range(len(data['items'])):
+        for i in range(5):
             message += "**" +str(i+1) + "번 : ( " + search_set[str(server_id)][i][3] + " )** `" + search_set[str(server_id)][i][1] + "` \n"
         if str(server_id) in search_message_set.keys():
             await search_message_set[str(server_id)].delete()
@@ -310,24 +307,64 @@ async def 재생(ctx, *args):
     elif search_message_set[str(server_id)] != None:
         if value.isdigit() and 0 < int(value) < 6:
             data = search_set[str(server_id)][int(value)-1]
+            yt = pytube.YouTube(data[0]).captions.all()
+            caption_value = "False" if yt == None else "True"
             Queue_Update(server_id, server_name, "APPEND", (data[1],
                                                             data[2],
-                                                            "https://www.youtube.com/watch?v="+data[0],
-                                                            data[4],
+                                                            data[0],
+                                                            caption_value,
                                                             data[3],
                                                             str(ctx.message.author),
                                                             ctx.message.author.name))
+        await Playing(ctx)
 
+async def Playing(ctx):
+    server = ctx.guild
+    server_id = server.id
+    server_name = str(server)
+    vc = vc_set[str(server_id)]
+    QUEUE_DB = sqlite3.connect(os.path.join(
+        ORIGINAL_DIR, f"Servers/Queue_{server_id}_{server_name}.db"))
+    QUEUE_SQL = QUEUE_DB.cursor()
+    SERVER_SQL = SERVER_DB.cursor()
+    while True:
+        QUEUE_SQL.execute('select * from Queues LIMIT 1')
+        queue_data = QUEUE_SQL.fetchall()
+        SERVER_SQL.execute(f'select * from Servers where Server_ID={server_id}')
+        server_data = SERVER_SQL.fetchall()
+        repeat_value = server_data[0][9]
+        sound_effect = server_data[0][10]
+        if queue_data == []:
+            break
+        else:
+
+            num, \
+            song_title, \
+            song_channel, \
+            song_link, \
+            song_lyric_value, \
+            duration, \
+            request_user_id, \
+            request_user_name = queue_data[0]
+
+            YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist': 'True'}
+            FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
+                              'options': '-vn'}
+
+            with YoutubeDL(YDL_OPTIONS) as ydl:
+                info = ydl.extract_info(song_link, download=False)
+            URL = info['formats'][0]['url']
+            vc_set[str(server_id)].play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
+            while vc_set[str(server_id)].is_playing:
 
 
 @bot.command()
 async def 테스트(ctx):
     await 입장(ctx)
-    await 큐(ctx)
-    await 큐(ctx)
-    await 퇴장(ctx)
+    await 검색(ctx, "망상감상대상연맹")
+    await 재생(ctx, "1")
 
-"""
+
 @bot.event
 async def on_error(ctx, error):
     guild = ctx.guild
@@ -348,7 +385,7 @@ async def on_command_error(ctx, error):
     method = "on_command_error"
     log_message += f'<{datetime.datetime.now()}> [{method}] {error}' + "\n"
     with open(os.path.join(ORIGINAL_DIR, f"Logs/Log_{server_id}_{server_name}.txt"), 'a') as f:
-        f.write(log_message)"""
+        f.write(log_message)
 
 
 bot.run(BOT_TOKEN)

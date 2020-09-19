@@ -138,3 +138,60 @@
 <2020-09-19 02:27:28.893384> [Search] First message
 <2020-09-19 02:27:29.168319> [Search] Searched [망상감상]
 <2020-09-19 02:28:40.645609> [Join] The bot has connected to 일반
+<2020-09-19 13:26:21.933268> [Join] The bot has connected to 일반
+<2020-09-19 13:26:28.717917> [Queue] Have no queue
+<2020-09-19 13:26:28.718025> [Queue] First message
+<2020-09-19 13:26:34.722292> [Search] First message
+<2020-09-19 13:26:34.984055> [Search] Searched [망상감상]
+<2020-09-19 13:27:11.786237> [Join] The bot has connected to 일반
+<2020-09-19 13:27:31.052278> [Join] The bot has connected to 일반
+<2020-09-19 13:28:10.716549> [Join] The bot has connected to 일반
+<2020-09-19 14:38:19.722327> [Join] The bot has connected to 일반
+<2020-09-19 14:38:38.991317> [Join] The bot has connected to 일반
+<2020-09-19 14:39:27.573632> [Join] The bot has connected to 일반
+<2020-09-19 14:39:31.085222> [Search] First message
+<2020-09-19 14:39:31.366615> [Search] Searched [망상감상]
+<2020-09-19 14:41:35.301103> [Join] The bot has connected to 일반
+<2020-09-19 14:41:36.239134> [Search] First message
+<2020-09-19 14:41:36.504584> [Search] Searched [망상감상대상연맹]
+<2020-09-19 14:45:30.242045> [Join] The bot has connected to 일반
+<2020-09-19 14:45:31.216983> [Search] First message
+<2020-09-19 14:45:31.530446> [Search] Searched [망상감상대상연맹]
+<2020-09-19 14:46:01.410011> [Join] The bot has connected to 일반
+<2020-09-19 14:46:02.289655> [Search] First message
+<2020-09-19 14:46:02.655768> [Search] Searched [망상감상대상연맹]
+<2020-09-19 14:56:03.578016> [Join] The bot has connected to 일반
+<2020-09-19 14:56:04.442497> [Search] First message
+<2020-09-19 14:56:04.717333> [Search] Searched [망상감상대상연맹]
+<2020-09-19 14:56:39.555923> [Join] The bot has connected to 일반
+<2020-09-19 14:56:40.451112> [Search] First message
+<2020-09-19 14:56:40.756356> [Search] Searched [망상감상대상연맹]
+<2020-09-19 14:58:36.660940> [Join] The bot has connected to 일반
+<2020-09-19 14:58:37.523858> [Search] First message
+<2020-09-19 14:58:37.951380> [Search] Searched [망상감상대상연맹]
+<2020-09-19 15:21:06.251094> [Join] The bot has connected to 일반
+<2020-09-19 15:21:07.100790> [Search] First message
+<2020-09-19 15:21:07.408093> [Search] Searched [망상감상대상연맹]
+<2020-09-19 15:21:42.847427> [Join] The bot has connected to 일반
+<2020-09-19 15:21:43.678977> [Search] First message
+<2020-09-19 15:21:43.934703> [Search] Searched [망상감상대상연맹]
+<2020-09-19 15:27:11.182773> [Join] The bot has connected to 일반
+<2020-09-19 15:27:12.061205> [Search] First message
+<2020-09-19 15:27:12.329622> [Search] Searched [망상감상대상연맹]
+<2020-09-19 15:27:30.142840> [Join] The bot has connected to 일반
+<2020-09-19 15:27:30.994630> [Search] First message
+<2020-09-19 15:27:31.303954> [Search] Searched [망상감상대상연맹]
+<2020-09-19 15:27:57.798391> [Join] The bot has connected to 일반
+<2020-09-19 15:27:58.612543> [Search] First message
+<2020-09-19 15:27:58.893352> [Search] Searched [망상감상대상연맹]
+<2020-09-19 15:28:55.423221> [Join] The bot has connected to 일반
+<2020-09-19 15:28:56.277054> [Search] First message
+<2020-09-19 15:28:56.628082> [Search] Searched [망상감상대상연맹]
+<2020-09-19 15:29:00.073920> [on_command_error] Command raised an exception: ClientException: Already playing audio.
+<2020-09-19 15:29:52.977913> [Join] The bot has connected to 일반
+<2020-09-19 15:29:54.660906> [Join] This bot is already in 일반
+<2020-09-19 15:29:55.507089> [Search] First message
+<2020-09-19 15:29:55.778435> [Search] Searched [망상감상대상연맹]
+<2020-09-19 15:32:38.023458> [Join] The bot has connected to 일반
+<2020-09-19 15:32:38.988412> [Search] First message
+<2020-09-19 15:32:39.279067> [Search] Searched [망상감상대상연맹]
