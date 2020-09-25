@@ -49,6 +49,7 @@ search_message_set = {}
 search_set = {}
 vc_set = {}
 player_set = {}
+timer_set = {}
 
 def Server_Update(server_id, value_set):
     global SERVER_SQL, SERVER_DB
@@ -73,17 +74,25 @@ def Queue_Update(server_id, server_name, command, video_info_set):
                           'values(?,?,?,?,?,?,?)'
                           , video_info_set)
         QUEUE_DB.commit()
+    elif command == "DELETE":
+        for i in video_info_set:
+            QUEUE_SQL.execute(f'delete from Queues LIMIT 1 OFFSET {i-1}')
+        QUEUE_DB.commit()
+
 
 def Parsing(content):
     data = list(map(int,content.split(':')))
     if len(data) == 3:
         timestamp = "{:02}:{:02}:{:02}".format(data[0], data[1], data[2])
     elif len(data) == 2:
-        timestamp = "{:02}:{:02}".format(data[0], data[1])
+        timestamp = "00:{:02}:{:02}".format(data[0], data[1])
     else:
-        timestamp = "{:02}:{:02}".format(0, data[0])
+        timestamp = "00:00:{:02}".format(data[0])
     return timestamp
 
+def Un_Parsing(content):
+    format_content = tuple(map(int, content.split(":")))
+    return format_content[0] * 3600 + format_content[1] * 60 + format_content[2]
 
 @bot.event
 async def on_ready():
@@ -328,6 +337,7 @@ async def Playing(ctx):
     QUEUE_SQL = QUEUE_DB.cursor()
     SERVER_SQL = SERVER_DB.cursor()
     while True:
+        print("next_process 1")
         QUEUE_SQL.execute('select * from Queues LIMIT 1')
         queue_data = QUEUE_SQL.fetchall()
         SERVER_SQL.execute(f'select * from Servers where Server_ID={server_id}')
@@ -335,9 +345,9 @@ async def Playing(ctx):
         repeat_value = server_data[0][9]
         sound_effect = server_data[0][10]
         if queue_data == []:
+            print('break')
             break
         else:
-
             num, \
             song_title, \
             song_channel, \
@@ -354,8 +364,46 @@ async def Playing(ctx):
             with YoutubeDL(YDL_OPTIONS) as ydl:
                 info = ydl.extract_info(song_link, download=False)
             URL = info['formats'][0]['url']
-            vc_set[str(server_id)].play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
-            while vc_set[str(server_id)].is_playing:
+            vc.play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
+
+            timer_set[str(server_id)] = [datetime.datetime.now(), datetime.datetime.now(), -1, -1, Un_Parsing(duration), -1, 0]
+            timer_set[str(server_id)][-1] = (timer_set[str(server_id)][1] - timer_set[str(server_id)][0]).total_seconds()
+            sec_, min_, hour_ = int(timer_set[str(server_id)][-2] % 60), int((timer_set[str(server_id)][-2] // 60) % 60), int((timer_set[str(server_id)][-2] // 60) // 60)
+            while timer_set[str(server_id)][-2] < timer_set[str(server_id)][-3]:
+                SERVER_SQL.execute(f'select Playing_Status from Servers where Server_ID={server_id}')
+                if SERVER_SQL.fetchall()[0][0] == "Pause":
+                    timer_set[str(server_id)][2] = datetime.datetime.now()
+                    vc.pause()
+                    while True:
+                        SERVER_SQL.execute(f'select Playing_Status from Servers where Server_ID={server_id}')
+                        await asyncio.sleep(1)
+                        if SERVER_SQL.fetchall()[0][0] == "Resume":
+                            timer_set[str(server_id)][3] = datetime.datetime.now()
+                            vc.resume()
+                            break
+                    timer_set[str(server_id)][-1] += (timer_set[str(server_id)][3] - timer_set[str(server_id)][2]).total_seconds()
+                timer_set[str(server_id)][1] = datetime.datetime.now()
+                timer_set[str(server_id)][-2] = (timer_set[str(server_id)][1] - timer_set[str(server_id)][0]).total_seconds() - timer_set[str(server_id)][-1]
+                print(timer_set[str(server_id)][-2])
+                await asyncio.sleep(1)
+            Queue_Update(server_id, server_name, "DELETE", [1])
+
+@bot.command()
+async def 일시정지(ctx):
+    server = ctx.guild
+    server_id = server.id
+    server_name = str(server)
+    SERVER_SQL.execute(f'UPDATE Servers Set Playing_Status = "Pause" where Server_ID={server_id}')
+    SERVER_DB.commit()
+
+
+@bot.command()
+async def 계속(ctx):
+    server = ctx.guild
+    server_id = server.id
+    server_name = str(server)
+    SERVER_SQL.execute(f'UPDATE Servers Set Playing_Status = "Resume" where Server_ID={server_id}')
+    SERVER_DB.commit()
 
 
 @bot.command()

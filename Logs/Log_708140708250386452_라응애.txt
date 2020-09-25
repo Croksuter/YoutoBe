@@ -195,3 +195,144 @@
 <2020-09-19 15:32:38.023458> [Join] The bot has connected to 일반
 <2020-09-19 15:32:38.988412> [Search] First message
 <2020-09-19 15:32:39.279067> [Search] Searched [망상감상대상연맹]
+<2020-09-25 22:33:49.981602> [Join] The bot has connected to 일반
+<2020-09-25 22:33:50.893055> [Search] First message
+<2020-09-25 22:33:51.166983> [Search] Searched [망상감상대상연맹]
+<2020-09-25 22:34:34.679222> [on_command_error] Command "종료" is not found
+<2020-09-25 22:35:14.640367> [Queue] Have queue
+<2020-09-25 22:35:14.640444> [Queue] First message
+<2020-09-25 22:37:29.529296> [Join] The bot has connected to 일반
+<2020-09-25 22:37:33.268634> [Queue] Have queue
+<2020-09-25 22:37:33.268775> [Queue] First message
+<2020-09-25 22:37:42.616637> [Search] First message
+<2020-09-25 22:37:42.889360> [Search] Searched [내가 죽으려고 생각한것은]
+<2020-09-25 22:45:42.926321> [on_command_error] Command raised an exception: OperationalError: database is locked
+<2020-09-25 23:02:51.305243> [Search] First message
+<2020-09-25 23:02:51.672573> [Search] Searched [망상]
+<2020-09-25 23:03:01.598698> [on_command_error] Command raised an exception: OperationalError: database is locked
+<2020-09-25 23:03:19.680354> [on_command_error] Command raised an exception: KeyError: '708140708250386452'
+<2020-09-25 23:04:06.955817> [on_command_error] Command raised an exception: KeyError: '708140708250386452'
+<2020-09-25 23:04:30.437319> [Join] The bot has connected to 일반
+<2020-09-25 23:09:38.710178> [Join] The bot has connected to 일반
+<2020-09-25 23:09:41.865069> [Search] First message
+<2020-09-25 23:09:42.141258> [Search] Searched [10초영상]
+<2020-09-25 23:10:37.032412> [Join] The bot has connected to 일반
+<2020-09-25 23:10:41.396418> [Search] First message
+<2020-09-25 23:10:41.742958> [Search] Searched [10초 영상]
+<2020-09-25 23:18:06.570516> [Join] The bot has connected to 일반
+<2020-09-25 23:18:09.807787> [Search] First message
+<2020-09-25 23:18:10.081317> [Search] Searched [10초 영상]
+<2020-09-25 23:18:13.764897> [on_command_error] Command raised an exception: TypeError: object NoneType can't be used in 'await' expression
+<2020-09-25 23:20:13.566981> [Join] The bot has connected to 일반
+<2020-09-25 23:20:16.870047> [Search] First message
+<2020-09-25 23:20:17.201795> [Search] Searched [10초 영상]
+<2020-09-25 23:25:04.747139> [Join] The bot has connected to 일반
+<2020-09-25 23:25:12.190722> [Search] First message
+<2020-09-25 23:25:12.770826> [Search] Searched [10초 영상]
+<2020-09-25 23:25:41.729550> [Search] First message
+<2020-09-25 23:25:42.090168> [Search] Searched [망상]
+<2020-09-25 23:25:49.754573> [on_command_error] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'play'
+<2020-09-25 23:26:10.019055> [on_command_error] Command raised an exception: ClientException: Already connected to a voice channel.
+<2020-09-25 23:26:12.904317> [on_command_error] Command raised an exception: RegexMatchError: get_ytplayer_config: could not find match for config_patterns
+<2020-09-25 23:26:30.598535> [on_command_error] Command raised an exception: ClientException: Not connected to voice.
+<2020-09-25 23:26:44.902078> [Join] The bot has connected to 일반
+<2020-09-25 23:26:49.459397> [Search] First message
+<2020-09-25 23:26:49.744159> [Search] Searched [망상]
+<2020-09-25 23:27:16.456156> [Join] The bot has connected to 일반
+<2020-09-25 23:27:21.015568> [Search] First message
+<2020-09-25 23:27:21.282528> [Search] Searched [망상]
+<2020-09-25 23:28:03.903912> [Join] The bot has connected to 일반
+<2020-09-25 23:28:08.725062> [Search] First message
+<2020-09-25 23:28:09.090213> [Search] Searched [망상]
+<2020-09-25 23:29:16.478758> [Join] The bot has connected to 일반
+<2020-09-25 23:29:20.541654> [Search] First message
+<2020-09-25 23:29:20.860818> [Search] Searched [망상]
+<2020-09-25 23:31:06.356670> [Join] The bot has connected to 일반
+<2020-09-25 23:31:10.335933> [Search] First message
+<2020-09-25 23:31:10.632837> [Search] Searched [망상]
+<2020-09-25 23:31:12.726097> [on_command_error] Command raised an exception: KeyError: 'assets'
+<2020-09-25 23:33:15.540273> [Search] First message
+<2020-09-25 23:33:16.126452> [Search] Searched [망상]
+<2020-09-25 23:33:20.063380> [on_command_error] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'play'
+<2020-09-25 23:33:32.675991> [on_command_error] Command raised an exception: ClientException: Already connected to a voice channel.
+<2020-09-25 23:33:36.504835> [on_command_error] Command raised an exception: ClientException: Not connected to voice.
+<2020-09-25 23:33:44.209009> [Leave] The bot is not in any voice channel in 라응애
+<2020-09-25 23:33:54.185367> [on_command_error] Command raised an exception: ClientException: Already connected to a voice channel.
+<2020-09-25 23:34:01.566685> [Leave] The bot is not in any voice channel in 라응애
+<2020-09-25 23:34:04.120368> [Leave] The bot is not in any voice channel in 라응애
+<2020-09-25 23:34:14.055124> [Join] The bot has connected to 일반
+<2020-09-25 23:34:17.031677> [Search] First message
+<2020-09-25 23:34:17.362311> [Search] Searched [망상]
+<2020-09-25 23:34:30.030852> [on_command_error] Command raised an exception: TypeError: 'int' object is not iterable
+<2020-09-25 23:35:57.029076> [Join] The bot has connected to 일반
+<2020-09-25 23:36:00.361327> [Search] First message
+<2020-09-25 23:36:00.739934> [Search] Searched [망상]
+<2020-09-25 23:36:09.767105> [on_command_error] Command raised an exception: NameError: name 'UEUE_SQL' is not defined
+<2020-09-25 23:36:49.662292> [Search] First message
+<2020-09-25 23:36:49.941251> [Search] Searched [망상]
+<2020-09-25 23:36:54.610097> [on_command_error] Command raised an exception: AttributeError: 'NoneType' object has no attribute 'play'
+<2020-09-25 23:37:26.867744> [Join] The bot has connected to 일반
+<2020-09-25 23:37:29.235007> [Search] First message
+<2020-09-25 23:37:29.549034> [Search] Searched [망상]
+<2020-09-25 23:37:38.359429> [on_command_error] Command raised an exception: OperationalError: near "*": syntax error
+<2020-09-25 23:42:35.214160> [Join] The bot has connected to 일반
+<2020-09-25 23:42:38.912664> [Search] First message
+<2020-09-25 23:42:39.317812> [Search] Searched [망상]
+<2020-09-25 23:42:48.468088> [on_command_error] Command raised an exception: OperationalError: near "*": syntax error
+<2020-09-25 23:43:16.334896> [Search] First message
+<2020-09-25 23:43:16.624915> [Search] Searched [망상]
+<2020-09-25 23:43:19.116407> [on_command_error] Command raised an exception: ClientException: Already connected to a voice channel.
+<2020-09-25 23:43:29.159679> [on_command_error] Command raised an exception: ClientException: Not connected to voice.
+<2020-09-25 23:43:53.911781> [Join] The bot has connected to 일반
+<2020-09-25 23:44:01.744306> [Search] First message
+<2020-09-25 23:44:02.082514> [Search] Searched [망상]
+<2020-09-25 23:44:05.913462> [on_command_error] Command raised an exception: DownloadError: ERROR: I3kd3M2IRu4: YouTube said: Unable to extract video data
+<2020-09-25 23:44:19.518950> [on_command_error] Command raised an exception: OperationalError: near "*": syntax error
+<2020-09-25 23:46:18.164740> [Join] The bot has connected to 일반
+<2020-09-25 23:46:23.070874> [Search] First message
+<2020-09-25 23:46:23.406306> [Search] Searched [망상]
+<2020-09-25 23:46:27.949383> [on_command_error] Command raised an exception: KeyError: 'assets'
+<2020-09-25 23:46:46.175626> [on_command_error] Command raised an exception: OperationalError: near "*": syntax error
+<2020-09-25 23:47:48.900964> [Join] The bot has connected to 일반
+<2020-09-25 23:47:51.615196> [Search] First message
+<2020-09-25 23:47:51.911763> [Search] Searched [망상]
+<2020-09-26 00:12:32.035175> [Join] The bot has connected to 일반
+<2020-09-26 00:12:33.952481> [Search] First message
+<2020-09-26 00:12:34.252606> [Search] Searched [망상]
+<2020-09-26 00:12:39.688711> [on_command_error] Command raised an exception: TypeError: 'tuple' object does not support item assignment
+<2020-09-26 00:13:50.148082> [Join] The bot has connected to 일반
+<2020-09-26 00:13:52.665604> [Search] First message
+<2020-09-26 00:13:52.983953> [Search] Searched [망상]
+<2020-09-26 00:13:57.240816> [on_command_error] Command raised an exception: TypeError: 'tuple' object does not support item assignment
+<2020-09-26 00:15:06.451596> [Join] The bot has connected to 일반
+<2020-09-26 00:15:08.471577> [Search] First message
+<2020-09-26 00:15:08.886416> [Search] Searched [망상]
+<2020-09-26 00:16:50.039833> [Join] The bot has connected to 일반
+<2020-09-26 00:16:53.399112> [Search] First message
+<2020-09-26 00:16:53.727957> [Search] Searched [망상]
+<2020-09-26 01:21:38.543453> [on_command_error] Command raised an exception: OperationalError: database is locked
+<2020-09-26 01:21:39.116659> [Search] First message
+<2020-09-26 01:21:39.422505> [Search] Searched [망상]
+<2020-09-26 01:21:56.201104> [on_command_error] Command raised an exception: OperationalError: near "from": syntax error
+<2020-09-26 01:23:31.940751> [on_command_error] Command raised an exception: OperationalError: database is locked
+<2020-09-26 01:23:47.019912> [Join] The bot has connected to 일반
+<2020-09-26 01:23:47.829558> [Search] First message
+<2020-09-26 01:23:48.182702> [Search] Searched [망상감상대상연맹]
+<2020-09-26 01:23:48.183039> [on_command_error] Command raised an exception: TypeError: 재생() takes 1 positional argument but 2 were given
+<2020-09-26 01:24:17.501555> [Join] The bot has connected to 일반
+<2020-09-26 01:24:18.336719> [Search] First message
+<2020-09-26 01:24:18.622410> [Search] Searched [망상감상대상연맹]
+<2020-09-26 01:26:38.305884> [Join] The bot has connected to 일반
+<2020-09-26 01:26:39.380347> [Search] First message
+<2020-09-26 01:26:39.711173> [Search] Searched [망상감상대상연맹]
+<2020-09-26 01:27:12.305357> [Join] The bot has connected to 일반
+<2020-09-26 01:27:13.143700> [Search] First message
+<2020-09-26 01:27:13.555160> [Search] Searched [망상감상대상연맹]
+<2020-09-26 01:27:25.655573> [on_command_error] Command "계속" is not found
+<2020-09-26 01:27:48.775936> [Join] The bot has connected to 일반
+<2020-09-26 01:27:49.679166> [Search] First message
+<2020-09-26 01:27:50.024623> [Search] Searched [망상감상대상연맹]
+<2020-09-26 01:28:02.340016> [on_command_error] Command "계속" is not found
+<2020-09-26 01:28:26.864402> [Join] The bot has connected to 일반
+<2020-09-26 01:28:27.769698> [Search] First message
+<2020-09-26 01:28:28.138219> [Search] Searched [망상감상대상연맹]
