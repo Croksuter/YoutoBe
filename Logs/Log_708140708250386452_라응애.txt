@@ -336,3 +336,497 @@
 <2020-09-26 01:28:26.864402> [Join] The bot has connected to 일반
 <2020-09-26 01:28:27.769698> [Search] First message
 <2020-09-26 01:28:28.138219> [Search] Searched [망상감상대상연맹]
+<2020-09-26 11:48:03.278416> [Join] The bot has connected to 일반
+<2020-09-26 11:48:04.147354> [Search] First message
+<2020-09-26 11:48:04.473838> [Search] Searched [망상감상대상연맹]
+<2020-09-26 11:48:07.788920> [on_command_error] Command raised an exception: TypeError: not all arguments converted during string formatting
+<2020-09-26 11:49:45.334603> [Join] The bot has connected to 일반
+<2020-09-26 11:49:46.171050> [Search] First message
+<2020-09-26 11:49:46.478063> [Search] Searched [망상감상대상연맹]
+<2020-09-26 11:50:22.203662> [Join] The bot has connected to 일반
+<2020-09-26 11:50:23.064187> [Search] First message
+<2020-09-26 11:50:23.371701> [Search] Searched [망상감상대상연맹]
+<2020-09-26 11:52:09.249503> [Join] The bot has connected to 일반
+<2020-09-26 11:52:10.119239> [Search] First message
+<2020-09-26 11:52:10.407032> [Search] Searched [망상감상대상연맹]
+<2020-09-26 11:53:25.529485> [Join] The bot has connected to 일반
+<2020-09-26 11:53:26.400893> [Search] First message
+<2020-09-26 11:53:26.677903> [Search] Searched [망상감상대상연맹]
+<2020-09-26 11:53:56.981198> [Join] The bot has connected to 일반
+<2020-09-26 11:53:57.905859> [Search] First message
+<2020-09-26 11:53:58.166849> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:02:44.945202> [Search] First message
+<2020-09-26 12:02:45.235859> [Search] Searched [망상]
+<2020-09-26 12:07:20.369671> [Join] The bot has connected to 일반
+<2020-09-26 12:07:21.208134> [Search] First message
+<2020-09-26 12:07:21.506568> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:08:25.845305> [Join] The bot has connected to 일반
+<2020-09-26 12:08:26.760082> [Search] First message
+<2020-09-26 12:08:27.044639> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:10:01.605431> [Join] The bot has connected to 일반
+<2020-09-26 12:10:02.430174> [Search] First message
+<2020-09-26 12:10:02.743679> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:10:35.059286> [Join] The bot has connected to 일반
+<2020-09-26 12:10:35.998155> [Search] First message
+<2020-09-26 12:10:36.271697> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:11:53.497840> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 12:11:58.546204> [Join] The bot has connected to 일반
+<2020-09-26 12:11:59.415380> [Search] First message
+<2020-09-26 12:11:59.859718> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:13:18.493535> [Join] The bot has connected to 일반
+<2020-09-26 12:13:19.312455> [Search] First message
+<2020-09-26 12:13:19.699448> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:17:24.313432> [Join] The bot has connected to 일반
+<2020-09-26 12:17:25.188220> [Search] First message
+<2020-09-26 12:17:25.523957> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:19:42.732971> [Join] The bot has connected to 일반
+<2020-09-26 12:19:43.716292> [Search] First message
+<2020-09-26 12:19:44.079248> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:44:41.344215> [Join] The bot has connected to 일반
+<2020-09-26 12:44:42.195565> [Search] First message
+<2020-09-26 12:44:42.569966> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:49:19.028365> [Join] The bot has connected to 일반
+<2020-09-26 12:49:19.901450> [Search] First message
+<2020-09-26 12:49:20.268193> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:57:37.232275> [Join] The bot has connected to 일반
+<2020-09-26 12:57:38.097819> [Search] First message
+<2020-09-26 12:57:38.388411> [Search] Searched [망상감상대상연맹]
+<2020-09-26 12:58:07.274628> [Join] The bot has connected to 일반
+<2020-09-26 12:58:08.129487> [Search] First message
+<2020-09-26 12:58:08.454295> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:02:17.149223> [Join] The bot has connected to 일반
+<2020-09-26 13:02:18.017306> [Search] First message
+<2020-09-26 13:02:18.358685> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:05:00.406689> [Join] The bot has connected to 일반
+<2020-09-26 13:05:01.463797> [Search] First message
+<2020-09-26 13:05:01.798126> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:05:15.974007> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 13:05:24.345747> [Join] The bot has connected to 일반
+<2020-09-26 13:05:31.017963> [Search] First message
+<2020-09-26 13:05:31.297551> [Search] Searched [망상]
+<2020-09-26 13:06:13.471636> [Join] The bot has connected to 일반
+<2020-09-26 13:06:14.321039> [Search] First message
+<2020-09-26 13:06:14.619153> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:08:25.325580> [Join] The bot has connected to 일반
+<2020-09-26 13:08:26.198288> [Search] First message
+<2020-09-26 13:08:26.469636> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:09:50.519345> [Join] The bot has connected to 일반
+<2020-09-26 13:09:51.304720> [Search] First message
+<2020-09-26 13:09:51.579755> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:15:39.619201> [Join] The bot has connected to 일반
+<2020-09-26 13:15:40.543812> [Search] First message
+<2020-09-26 13:15:40.816078> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:16:59.053104> [Join] The bot has connected to 일반
+<2020-09-26 13:17:00.132408> [Search] First message
+<2020-09-26 13:17:00.431572> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:17:37.962866> [Join] The bot has connected to 일반
+<2020-09-26 13:17:38.888534> [Search] First message
+<2020-09-26 13:17:39.164794> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:19:47.576012> [Join] The bot has connected to 일반
+<2020-09-26 13:19:48.437938> [Search] First message
+<2020-09-26 13:19:48.716349> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:22:37.898414> [Join] The bot has connected to 일반
+<2020-09-26 13:22:38.809051> [Search] First message
+<2020-09-26 13:22:39.136451> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:23:23.375813> [Join] The bot has connected to 일반
+<2020-09-26 13:23:24.290348> [Search] First message
+<2020-09-26 13:23:24.548767> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:23:57.542334> [Join] The bot has connected to 일반
+<2020-09-26 13:23:58.372543> [Search] First message
+<2020-09-26 13:23:58.647090> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:24:40.460351> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 13:24:52.337710> [Join] The bot has connected to 일반
+<2020-09-26 13:24:53.184884> [Search] First message
+<2020-09-26 13:24:53.546049> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:26:15.217189> [Join] The bot has connected to 일반
+<2020-09-26 13:26:16.067329> [Search] First message
+<2020-09-26 13:26:16.358684> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:27:32.334320> [Join] The bot has connected to 일반
+<2020-09-26 13:27:33.293429> [Search] First message
+<2020-09-26 13:27:33.575849> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:29:19.810577> [Join] The bot has connected to 일반
+<2020-09-26 13:29:20.675486> [Search] First message
+<2020-09-26 13:29:20.960694> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:30:19.457635> [Join] The bot has connected to 일반
+<2020-09-26 13:30:20.369950> [Search] First message
+<2020-09-26 13:30:20.660240> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:31:55.374213> [Join] The bot has connected to 일반
+<2020-09-26 13:31:56.206161> [Search] First message
+<2020-09-26 13:31:56.514273> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:46:48.712612> [Join] The bot has connected to vivivi
+<2020-09-26 13:46:49.607311> [Search] First message
+<2020-09-26 13:46:49.870451> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:48:29.076541> [Join] The bot has connected to vivivi
+<2020-09-26 13:48:29.906671> [Search] First message
+<2020-09-26 13:48:30.174575> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:50:27.427193> [Join] The bot has connected to vivivi
+<2020-09-26 13:50:28.315009> [Search] First message
+<2020-09-26 13:50:28.678672> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:51:16.154043> [Join] The bot has connected to vivivi
+<2020-09-26 13:51:17.052381> [Search] First message
+<2020-09-26 13:51:17.331621> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:52:21.797079> [Join] The bot has connected to vivivi
+<2020-09-26 13:52:22.654722> [Search] First message
+<2020-09-26 13:52:22.917236> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:53:10.803139> [Join] The bot has connected to vivivi
+<2020-09-26 13:53:11.631947> [Search] First message
+<2020-09-26 13:53:11.918906> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:56:42.604779> [Join] The bot has connected to vivivi
+<2020-09-26 13:56:43.533453> [Search] First message
+<2020-09-26 13:56:43.792736> [Search] Searched [망상감상대상연맹]
+<2020-09-26 13:59:11.479833> [Join] The bot has connected to vivivi
+<2020-09-26 13:59:12.378221> [Search] First message
+<2020-09-26 13:59:12.665815> [Search] Searched [망상감상대상연맹]
+<2020-09-26 19:06:17.055981> [Join] The bot has connected to 일반
+<2020-09-26 19:06:17.909350> [Search] First message
+<2020-09-26 19:06:18.172179> [Search] Searched [망상감상대상연맹]
+<2020-09-26 19:06:47.566510> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 19:08:20.094771> [Join] The bot has connected to 일반
+<2020-09-26 19:08:20.995279> [Search] First message
+<2020-09-26 19:08:21.251364> [Search] Searched [망상감상대상연맹]
+<2020-09-26 19:08:49.888968> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 19:13:53.618516> [Join] The bot has connected to 일반
+<2020-09-26 19:13:54.531031> [Search] First message
+<2020-09-26 19:13:54.819049> [Search] Searched [망상감상대상연맹]
+<2020-09-26 19:17:38.589891> [Join] The bot has connected to 일반
+<2020-09-26 19:17:39.513155> [Search] First message
+<2020-09-26 19:17:39.783861> [Search] Searched [망상감상대상연맹]
+<2020-09-26 19:20:38.229593> [Join] The bot has connected to 일반
+<2020-09-26 19:20:39.053822> [Search] First message
+<2020-09-26 19:20:39.800644> [Search] Searched [망상감상대상연맹]
+<2020-09-26 19:26:07.916534> [Join] The bot has connected to 일반
+<2020-09-26 19:26:08.755868> [Search] First message
+<2020-09-26 19:26:09.035296> [Search] Searched [망상감상대상연맹]
+<2020-09-26 19:27:05.188022> [Join] The bot has connected to 일반
+<2020-09-26 19:27:06.034189> [Search] First message
+<2020-09-26 19:27:06.440327> [Search] Searched [망상감상대상연맹]
+<2020-09-26 19:38:50.922058> [Join] The bot has connected to 일반
+<2020-09-26 19:38:51.864593> [Search] First message
+<2020-09-26 19:38:52.237023> [Search] Searched [망상감상대상연맹]
+<2020-09-26 20:04:56.420759> [Join] The bot has connected to 일반
+<2020-09-26 20:04:57.334578> [Search] First message
+<2020-09-26 20:04:57.613621> [Search] Searched [망상감상대상연맹]
+<2020-09-26 20:18:52.720525> [Join] The bot has connected to 일반
+<2020-09-26 20:18:53.608872> [Search] First message
+<2020-09-26 20:18:53.982621> [Search] Searched [망상감상대상연맹]
+<2020-09-26 20:23:20.859655> [Join] The bot has connected to 일반
+<2020-09-26 20:23:21.707765> [Search] First message
+<2020-09-26 20:23:21.969822> [Search] Searched [망상감상대상연맹]
+<2020-09-26 20:30:25.038186> [Join] The bot has connected to 일반
+<2020-09-26 20:30:27.796329> [Search] First message
+<2020-09-26 20:30:28.074904> [Search] Searched [내가 죽으려고]
+<2020-09-26 20:31:28.046783> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 20:34:16.209318> [Join] The bot has connected to 일반
+<2020-09-26 20:34:21.418401> [Search] First message
+<2020-09-26 20:34:21.736952> [Search] Searched [내가 죽으려고]
+<2020-09-26 20:39:55.114326> [Join] The bot has connected to 일반
+<2020-09-26 20:39:56.016777> [Search] First message
+<2020-09-26 20:39:56.281773> [Search] Searched [망상감상대상연맹]
+<2020-09-26 20:53:15.234235> [Join] This bot is already in 일반
+<2020-09-26 20:53:16.176981> [Search] First message
+<2020-09-26 20:53:16.475023> [Search] Searched [망상감상대상연맹]
+<2020-09-26 20:57:27.073050> [Search] First message
+<2020-09-26 20:57:27.346028> [Search] Searched [난 로봇 너머의 너에게]
+<2020-09-26 21:00:17.199005> [Search] After message
+<2020-09-26 21:00:17.467890> [Search] Searched [Romaji+Eng SubsBoku wa Robot Goshi no Kimi ni Koi wo Suru by THE SxPLAY Full Theme]
+<2020-09-26 21:05:35.624810> [Search] First message
+<2020-09-26 21:05:35.918774> [Search] Searched [ice cream]
+<2020-09-26 21:09:57.515555> [Search] First message
+<2020-09-26 21:09:57.812878> [Search] Searched [lost control]
+<2020-09-26 21:13:37.114953> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 21:13:41.407058> [Join] The bot has connected to 일반
+<2020-09-26 21:13:47.960261> [Search] First message
+<2020-09-26 21:13:48.228679> [Search] Searched [everything will froze]
+<2020-09-26 21:14:15.521861> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 21:14:31.581317> [Search] First message
+<2020-09-26 21:14:31.887131> [Search] Searched [everything will freeze]
+<2020-09-26 21:14:37.278469> [Join] The bot has connected to 일반
+<2020-09-26 21:15:02.868831> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 21:15:07.369110> [Join] The bot has connected to 일반
+<2020-09-26 21:23:10.376061> [Search] First message
+<2020-09-26 21:23:10.680451> [Search] Searched [彼女は旅に出る]
+<2020-09-26 21:25:00.045732> [Search] First message
+<2020-09-26 21:25:00.371426> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:27:08.285387> [Join] The bot has connected to 일반
+<2020-09-26 21:27:45.336701> [Search] First message
+<2020-09-26 21:27:45.694125> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:28:48.031335> [Join] The bot has connected to 일반
+<2020-09-26 21:28:53.406727> [Search] First message
+<2020-09-26 21:28:53.766064> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:30:25.620069> [Search] There is no searching words
+<2020-09-26 21:30:25.620092> [Search] After message
+<2020-09-26 21:30:29.042901> [Join] The bot has connected to 일반
+<2020-09-26 21:30:34.916716> [Search] After message
+<2020-09-26 21:30:35.254740> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:34:26.055940> [Search] First message
+<2020-09-26 21:34:26.324922> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:34:38.613581> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 21:34:42.532911> [Join] The bot has connected to 일반
+<2020-09-26 21:34:52.105126> [Search] First message
+<2020-09-26 21:34:52.377720> [Search] Searched [자상무색]
+<2020-09-26 21:36:41.998624> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 21:36:51.746557> [Join] The bot has connected to 일반
+<2020-09-26 21:36:53.994038> [Search] First message
+<2020-09-26 21:36:54.309128> [Search] Searched [자상무색]
+<2020-09-26 21:40:44.288831> [Search] First message
+<2020-09-26 21:40:44.581131> [Search] Searched [자상무색]
+<2020-09-26 21:40:50.982569> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 21:40:54.851124> [Join] The bot has connected to 일반
+<2020-09-26 21:41:13.054769> [Search] First message
+<2020-09-26 21:41:13.342888> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:42:08.406266> [Join] The bot has connected to 일반
+<2020-09-26 21:42:10.108002> [Search] First message
+<2020-09-26 21:42:10.404546> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:44:05.502726> [Join] The bot has connected to 일반
+<2020-09-26 21:44:13.126076> [Search] First message
+<2020-09-26 21:44:13.401197> [Search] Searched [자상무색]
+<2020-09-26 21:48:48.069013> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 21:48:50.294638> [Join] The bot has connected to 일반
+<2020-09-26 21:49:19.865092> [Search] First message
+<2020-09-26 21:49:20.161955> [Search] Searched [망상]
+<2020-09-26 21:52:10.953575> [Join] The bot has connected to 일반
+<2020-09-26 21:52:17.875639> [Search] First message
+<2020-09-26 21:52:18.176796> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:56:18.038587> [Join] The bot has connected to 일반
+<2020-09-26 21:56:22.912521> [Search] First message
+<2020-09-26 21:56:23.185202> [Search] Searched [キミに赠る歌]
+<2020-09-26 21:57:26.621198> [Join] The bot has connected to 일반
+<2020-09-26 21:57:31.118660> [Search] First message
+<2020-09-26 21:57:31.379339> [Search] Searched [キミに赠る歌]
+<2020-09-26 22:43:57.228905> [Join] The bot has connected to 일반
+<2020-09-26 22:44:02.551392> [Search] First message
+<2020-09-26 22:44:02.806303> [Search] Searched [망상감상]
+<2020-09-26 22:45:04.468913> [Search] First message
+<2020-09-26 22:45:04.796091> [Search] Searched [망상감상]
+<2020-09-26 22:45:40.384850> [Join] The bot has connected to 일반
+<2020-09-26 22:45:41.306688> [Search] First message
+<2020-09-26 22:45:41.615581> [Search] Searched [망상감상대상연맹]
+<2020-09-26 22:45:45.037346> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 22:45:45.324580> [Player] Print play_status_embed
+<2020-09-26 22:45:57.201278> [Search] First message
+<2020-09-26 22:45:57.501809> [Search] Searched [난 로봇 너머의 너에게]
+<2020-09-26 22:47:33.407430> [Join] The bot has connected to 일반
+<2020-09-26 22:47:34.249725> [Search] First message
+<2020-09-26 22:47:34.561252> [Search] Searched [망상감상대상연맹]
+<2020-09-26 22:47:44.401005> [Play] No search before playing
+<2020-09-26 22:47:47.846050> [Search] First message
+<2020-09-26 22:47:48.191080> [Search] Searched [망상]
+<2020-09-26 22:48:33.004144> [Join] The bot has connected to 일반
+<2020-09-26 22:48:33.870308> [Search] First message
+<2020-09-26 22:48:34.142037> [Search] Searched [망상감상대상연맹]
+<2020-09-26 22:48:37.642264> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 22:48:37.911923> [Player] Print play_status_embed
+<2020-09-26 22:48:46.885033> [Search] First message
+<2020-09-26 22:48:47.262448> [Search] Searched [난 로봇 너머의]
+<2020-09-26 22:48:51.120329> [Play] Captions detected
+<2020-09-26 22:48:51.453538> [Play] Change to method, Append
+<2020-09-26 22:50:33.514134> [Pause]
+<2020-09-26 22:50:34.132409> [Player] Detected method [Pause]
+<2020-09-26 22:51:06.767766> [Resume]
+<2020-09-26 22:51:07.487938> [Player] Detected method [Resume]
+<2020-09-26 22:51:16.918240> [Skip]
+<2020-09-26 22:54:29.325833> [Join] The bot has connected to 일반
+<2020-09-26 22:54:30.246072> [Search] First message
+<2020-09-26 22:54:30.561093> [Search] Searched [망상감상대상연맹]
+<2020-09-26 22:54:34.269036> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 22:54:34.567860> [Player] Print play_status_embed
+<2020-09-26 22:54:53.066642> [Pause]
+<2020-09-26 22:54:53.454693> [Player] Detected method [Pause]
+<2020-09-26 22:54:55.474546> [Resume]
+<2020-09-26 22:54:55.538211> [Player] Detected method [Resume]
+<2020-09-26 22:54:58.606357> [Pause]
+<2020-09-26 22:55:00.382053> [Player] Detected method [Pause]
+<2020-09-26 22:55:06.444189> [Resume]
+<2020-09-26 22:55:06.623079> [Player] Detected method [Resume]
+<2020-09-26 22:55:14.085750> [Skip]
+<2020-09-26 22:55:14.134003> [Player] Detected method [Skip]
+<2020-09-26 22:55:15.112943> [on_command_error] Command raised an exception: ClientException: Already playing audio.
+<2020-09-26 22:56:29.448858> [Join] The bot has connected to 일반
+<2020-09-26 22:56:30.378830> [Search] First message
+<2020-09-26 22:56:30.670560> [Search] Searched [망상감상대상연맹]
+<2020-09-26 22:56:32.054695> [on_command_error] Command raised an exception: KeyError: 'assets'
+<2020-09-26 22:56:51.136422> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 22:56:51.432802> [Player] Print play_status_embed
+<2020-09-26 22:57:01.705598> [Pause]
+<2020-09-26 22:57:01.737339> [Player] Detected method [Pause]
+<2020-09-26 22:57:03.981849> [Resume]
+<2020-09-26 22:57:04.858146> [Player] Detected method [Resume]
+<2020-09-26 22:57:06.209751> [Skip]
+<2020-09-26 22:57:06.964346> [Player] Detected method [Skip]
+<2020-09-26 22:57:07.876974> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 22:57:08.150261> [Player] Print play_status_embed
+<2020-09-26 22:57:44.389697> [Pause]
+<2020-09-26 22:57:44.729657> [Player] Detected method [Pause]
+<2020-09-26 22:59:18.888734> [Join] The bot has connected to 일반
+<2020-09-26 22:59:19.850262> [Search] First message
+<2020-09-26 22:59:20.152072> [Search] Searched [망상감상대상연맹]
+<2020-09-26 22:59:23.966725> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 22:59:24.241107> [Player] Print play_status_embed
+<2020-09-26 22:59:34.888561> [Skip]
+<2020-09-26 22:59:35.595997> [Player] Detected method [Skip]
+<2020-09-26 22:59:36.768420> [Player] Player playing music [[J-POP] THE SxPLAY - 난 로봇 너머의 너에게 사랑을 한다(僕はロボットごしの君に恋をする)] [https://www.youtube.com/watch?v=_9s4bAJMRn0]
+<2020-09-26 22:59:37.167979> [Player] Print play_status_embed
+<2020-09-26 22:59:38.976846> [on_command_error] Command raised an exception: KeyError: 'en'
+<2020-09-26 23:02:45.180037> [Join] The bot has connected to 일반
+<2020-09-26 23:02:46.074159> [Search] First message
+<2020-09-26 23:02:46.417543> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:02:50.359778> [Player] Player playing music [[J-POP] THE SxPLAY - 난 로봇 너머의 너에게 사랑을 한다(僕はロボットごしの君に恋をする)] [https://www.youtube.com/watch?v=_9s4bAJMRn0]
+<2020-09-26 23:02:50.721527> [Player] Print play_status_embed
+<2020-09-26 23:04:05.219891> [on_command_error] Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+<2020-09-26 23:04:04.975814> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 23:04:07.992577> [Join] The bot has connected to 일반
+<2020-09-26 23:04:08.880889> [Search] First message
+<2020-09-26 23:04:09.257233> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:04:12.453988> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:04:12.946671> [Player] Print play_status_embed
+<2020-09-26 23:04:46.143343> [Skip]
+<2020-09-26 23:04:46.341056> [Player] Detected method [Skip]
+<2020-09-26 23:04:47.257380> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:04:47.635030> [Player] Print play_status_embed
+<2020-09-26 23:04:53.547678> [Pause]
+<2020-09-26 23:04:53.663311> [Player] Detected method [Pause]
+<2020-09-26 23:04:55.953236> [Skip]
+<2020-09-26 23:04:56.625582> [Player] Detected method [Skip], Escaped pause loop
+<2020-09-26 23:04:56.626246> [on_command_error] Command raised an exception: TypeError: unsupported operand type(s) for -: 'int' and 'datetime.datetime'
+<2020-09-26 23:07:42.688671> [Join] The bot has connected to 일반
+<2020-09-26 23:07:43.544878> [Search] First message
+<2020-09-26 23:07:43.870898> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:07:47.572905> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:07:47.918869> [Player] Print play_status_embed
+<2020-09-26 23:07:51.775071> [Skip]
+<2020-09-26 23:07:52.176344> [Player] Detected method [Skip]
+<2020-09-26 23:07:53.103312> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:07:53.391817> [Player] Print play_status_embed
+<2020-09-26 23:07:56.703266> [Pause]
+<2020-09-26 23:07:57.480697> [Player] Detected method [Pause]
+<2020-09-26 23:08:00.421284> [Skip]
+<2020-09-26 23:08:01.379251> [Player] Detected method [Skip], Escaped pause loop
+<2020-09-26 23:08:01.379346> [Player] Detected method [Skip]
+<2020-09-26 23:08:04.008525> [Player] Player playing music [[J-POP] THE SxPLAY - 난 로봇 너머의 너에게 사랑을 한다(僕はロボットごしの君に恋をする)] [https://www.youtube.com/watch?v=_9s4bAJMRn0]
+<2020-09-26 23:08:04.288580> [Player] Print play_status_embed
+<2020-09-26 23:09:28.857021> [Join] The bot has connected to 일반
+<2020-09-26 23:09:29.732523> [Search] First message
+<2020-09-26 23:09:30.000595> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:09:34.053124> [Player] Player playing music [[J-POP] THE SxPLAY - 난 로봇 너머의 너에게 사랑을 한다(僕はロボットごしの君に恋をする)] [https://www.youtube.com/watch?v=_9s4bAJMRn0]
+<2020-09-26 23:09:34.355209> [Player] Print play_status_embed
+<2020-09-26 23:09:36.168557> [on_command_error] Command raised an exception: TypeError: 'ValuesView' object is not subscriptable
+<2020-09-26 23:13:06.344085> [Join] The bot has connected to 일반
+<2020-09-26 23:13:07.355258> [Search] First message
+<2020-09-26 23:13:07.613650> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:13:11.490792> [Player] Player playing music [[J-POP] THE SxPLAY - 난 로봇 너머의 너에게 사랑을 한다(僕はロボットごしの君に恋をする)] [https://www.youtube.com/watch?v=_9s4bAJMRn0]
+<2020-09-26 23:13:11.820612> [Player] Print play_status_embed
+<2020-09-26 23:14:24.794530> [Join] The bot has connected to 일반
+<2020-09-26 23:14:25.672744> [Search] First message
+<2020-09-26 23:14:25.956675> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:14:29.832497> [Player] Player playing music [[J-POP] THE SxPLAY - 난 로봇 너머의 너에게 사랑을 한다(僕はロボットごしの君に恋をする)] [https://www.youtube.com/watch?v=_9s4bAJMRn0]
+<2020-09-26 23:14:30.142663> [Player] Print play_status_embed
+<2020-09-26 23:14:55.806563> [Join] The bot has connected to 일반
+<2020-09-26 23:14:56.732615> [Search] First message
+<2020-09-26 23:14:57.094144> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:15:00.831298> [Player] Player playing music [[J-POP] THE SxPLAY - 난 로봇 너머의 너에게 사랑을 한다(僕はロボットごしの君に恋をする)] [https://www.youtube.com/watch?v=_9s4bAJMRn0]
+<2020-09-26 23:15:01.094237> [Player] Print play_status_embed
+<2020-09-26 23:18:47.231592> [Stop]
+<2020-09-26 23:18:47.559577> [Player] Detected method [Stop], Escaped playing loop
+<2020-09-26 23:18:47.908775> [Player] Detected method [Stop], Escaped queue loop
+<2020-09-26 23:14:59.032897> [Play] Captions detected
+<2020-09-26 23:18:47.921961> [Play] Player start
+<2020-09-26 23:18:59.077906> [Leave] The bot has disconnected to 일반 in 라응애
+<2020-09-26 23:19:13.891279> [on_command_error] Command raised an exception: ClientException: Already connected to a voice channel.
+<2020-09-26 23:19:30.593518> [Join] The bot has connected to 일반
+<2020-09-26 23:19:31.555185> [Search] First message
+<2020-09-26 23:19:31.882887> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:19:34.818482> [on_command_error] Command raised an exception: DownloadError: ERROR: Incomplete YouTube ID 9s4bAJMRn0. URL https://www.youtube.com/watch?v=9s4bAJMRn0 looks truncated.
+<2020-09-26 23:20:52.725441> [Join] The bot has connected to 일반
+<2020-09-26 23:20:53.603396> [Search] First message
+<2020-09-26 23:20:53.880143> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:20:57.310471> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:20:57.709681> [Player] Print play_status_embed
+<2020-09-26 23:21:07.972496> [Skip]
+<2020-09-26 23:21:08.061858> [Player] Detected method [Skip]
+<2020-09-26 23:21:09.010623> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:21:09.312048> [Player] Print play_status_embed
+<2020-09-26 23:21:24.230828> [Pause]
+<2020-09-26 23:21:24.779322> [Player] Detected method [Pause]
+<2020-09-26 23:21:28.549042> [Skip]
+<2020-09-26 23:21:28.723202> [Player] Detected method [Skip], Escaped pause loop
+<2020-09-26 23:21:28.723320> [Player] Detected method [Skip]
+<2020-09-26 23:21:30.006597> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:21:30.349051> [Player] Print play_status_embed
+<2020-09-26 23:21:45.484664> [Pause]
+<2020-09-26 23:21:45.729495> [Player] Detected method [Pause]
+<2020-09-26 23:21:47.636379> [Stop]
+<2020-09-26 23:22:12.881637> [Join] The bot has connected to 일반
+<2020-09-26 23:22:13.727362> [Search] First message
+<2020-09-26 23:22:13.988711> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:22:17.472513> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:22:17.786328> [Player] Print play_status_embed
+<2020-09-26 23:22:23.285116> [Pause]
+<2020-09-26 23:22:23.679122> [Player] Detected method [Pause]
+<2020-09-26 23:22:25.554376> [Stop]
+<2020-09-26 23:22:44.457315> [on_command_error] Command raised an exception: ClientException: Already connected to a voice channel.
+<2020-09-26 23:22:58.141770> [Join] The bot has connected to 일반
+<2020-09-26 23:22:58.951904> [Search] First message
+<2020-09-26 23:22:59.247296> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:23:02.563974> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:23:02.889226> [Player] Print play_status_embed
+<2020-09-26 23:23:11.555173> [Pause]
+<2020-09-26 23:23:11.805213> [Player] Detected method [Pause]
+<2020-09-26 23:23:14.948783> [Stop]
+<2020-09-26 23:23:15.643795> [Player] Detected method [Stip], Escaped pause loop
+<2020-09-26 23:23:15.643903> [Player] Detected method [Stop], Escaped playing loop
+<2020-09-26 23:23:15.919827> [Player] Detected method [Stop], Escaped queue loop
+<2020-09-26 23:23:01.121534> [Play] Captions detected
+<2020-09-26 23:23:15.937846> [Play] Player start
+<2020-09-26 23:27:50.693207> [Join] This bot is already in 일반
+<2020-09-26 23:27:51.619513> [Search] First message
+<2020-09-26 23:27:51.914748> [Search] Searched [망상감상대상연맹]
+<2020-09-26 23:27:55.206266> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:27:55.489184> [Player] Print play_status_embed
+<2020-09-26 23:28:00.270286> [Skip]
+<2020-09-26 23:28:00.496136> [Player] Detected method [Skip]
+<2020-09-26 23:28:01.515358> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:01.805371> [Player] Print play_status_embed
+<2020-09-26 23:28:04.775167> [Skip]
+<2020-09-26 23:28:04.913658> [Player] Detected method [Skip]
+<2020-09-26 23:28:05.844439> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:05.928345> [Skip]
+<2020-09-26 23:28:06.196404> [Player] Print play_status_embed
+<2020-09-26 23:28:08.312385> [Player] Detected method [Skip]
+<2020-09-26 23:28:09.274907> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:09.599290> [Player] Print play_status_embed
+<2020-09-26 23:28:15.966673> [Skip]
+<2020-09-26 23:28:16.670899> [Player] Detected method [Skip]
+<2020-09-26 23:28:18.080447> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:18.365471> [Player] Print play_status_embed
+<2020-09-26 23:28:23.498137> [Skip]
+<2020-09-26 23:28:24.302150> [Player] Detected method [Skip]
+<2020-09-26 23:28:25.209999> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:25.526302> [Player] Print play_status_embed
+<2020-09-26 23:28:34.107449> [Skip]
+<2020-09-26 23:28:34.727455> [Player] Detected method [Skip]
+<2020-09-26 23:28:35.689384> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:36.057241> [Player] Print play_status_embed
+<2020-09-26 23:28:39.591777> [Skip]
+<2020-09-26 23:28:40.025107> [Player] Detected method [Skip]
+<2020-09-26 23:28:41.021699> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:41.402830> [Player] Print play_status_embed
+<2020-09-26 23:28:43.766172> [Skip]
+<2020-09-26 23:28:44.596692> [Player] Detected method [Skip]
+<2020-09-26 23:28:45.584518> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:45.940389> [Player] Print play_status_embed
+<2020-09-26 23:28:49.155119> [on_command_error] Command "스킵'" is not found
+<2020-09-26 23:28:51.093414> [Skip]
+<2020-09-26 23:28:51.891688> [Player] Detected method [Skip]
+<2020-09-26 23:28:52.854030> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:28:53.129088> [Player] Print play_status_embed
+<2020-09-26 23:28:59.370284> [Skip]
+<2020-09-26 23:28:59.914462> [Player] Detected method [Skip]
+<2020-09-26 23:29:01.794374> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:29:02.122003> [Player] Print play_status_embed
+<2020-09-26 23:29:44.446605> [Skip]
+<2020-09-26 23:29:44.950663> [Player] Detected method [Skip]
+<2020-09-26 23:29:45.886765> [Player] Player playing music [DECO*27 - 망상감상대상연맹 (한국어) / 휴복] [https://www.youtube.com/watch?v=I3kd3M2IRu4]
+<2020-09-26 23:29:46.261000> [Player] Print play_status_embed
+<2020-09-26 23:29:49.368903> [Skip]
+<2020-09-26 23:29:50.261156> [Player] Detected method [Skip]
+<2020-09-26 23:29:50.518038> [on_command_error] Command raised an exception: UnboundLocalError: local variable 'log_message' referenced before assignment

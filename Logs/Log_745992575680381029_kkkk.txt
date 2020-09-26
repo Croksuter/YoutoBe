@@ -41,3 +41,6 @@
 <2020-09-19 15:33:38.632474> [Join] This bot is already in 일반
 <2020-09-19 15:33:39.604611> [Search] First message
 <2020-09-19 15:33:39.845923> [Search] Searched [망상감상대상연맹]
+<2020-09-26 20:40:51.462401> [Join] The bot has connected to 일반
+<2020-09-26 20:40:52.366603> [Search] First message
+<2020-09-26 20:40:52.625759> [Search] Searched [망상감상대상연맹]
